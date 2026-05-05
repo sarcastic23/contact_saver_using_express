@@ -6,5 +6,5 @@ u can just register or use
 number=999999999
 pass=abcd
 or register urself
-
+BUT REMEMBER IT MAY TAKE A MINUTE BEFORE THE SITE OPENS .....
 https://contact-saver-using-express.onrender.com
