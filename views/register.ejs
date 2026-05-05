@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+    }
+    .login-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <%if(detail=='register'){%>
+      <h2>Register</h2>
+      <form action="/register" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="number">Number</label>
+      <input type="text" id="number" name="number" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">register</button>
+
+    </form>
+    <%}else{%>
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+      <label for="number">Number</label>
+      <input type="text" id="number" name="number" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">login</button>
+
+    </form> 
+      <a href="/register" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> register
+     </a>
+      <%}%>
+      
+
+  </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
